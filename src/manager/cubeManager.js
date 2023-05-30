@@ -2,7 +2,6 @@ const Cube = require("../models/Cube");
 
 exports.getAll = async (search, from, to) => {
   let filteredCubes = await Cube.find().lean();
-  console.log(filteredCubes);
 
   //TODO: use mongoose to filter in db
   if (search) {
