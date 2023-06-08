@@ -4,6 +4,7 @@ const homeController = require("./controllers/homeController");
 const cubicController = require("./controllers/cubicController");
 const accessoryController = require("./controllers/accessoryController");
 const userController = require("./controllers/usersController");
+
 router.use(homeController);
 router.use("/cubes", cubicController);
 router.use("/accessories", accessoryController);

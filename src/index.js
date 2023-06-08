@@ -1,8 +1,6 @@
 const express = require("express");
-
 const expressConfig = require("./config/expressConiguration");
 const handlebarsConfig = require("./config/handlebarsConfiguration");
-
 const dbConnect = require("./config/dbConfiguration");
 
 const routes = require("./routes");
@@ -11,7 +9,7 @@ const PORT = 5000;
 
 expressConfig(app);
 handlebarsConfig(app);
-//Configuration
+
 dbConnect()
   .then(() => {
     console.log("DN connected successfully");
